@@ -1,0 +1,78 @@
+.journals__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.journals__content {
+  padding: 2rem;
+  background-color: var(--primary-color-light);
+}
+
+.journals__author {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.journals__author img {
+  max-width: 30px;
+  border-radius: 100%;
+}
+
+.journals__author p {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.journals__content h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.journals__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.journals__footer p {
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+.journals__footer span a {
+  font-size: 1.5rem;
+  color: var(--white);
+  opacity: 0.75;
+}
+
+.journals__btn {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.location_logo {
+  color: white;
+  text-align: center;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.location_logo:hover {
+  color: darkorange;
+}
+
+@media (width < 900px) {
+  .journals__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media (width < 600px) {
+  .journals__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
